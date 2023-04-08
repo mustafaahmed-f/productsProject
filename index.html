@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <section class="text-white pb-5">
+<div class="headSec text-center text-white pt-5">
+<h1>Products website</h1>
+<p class="mb-0">Here your can add your products and view them</p>
+<p class="mt-0">with extra features</p>
+</div>
+
+
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-md-10 py-5 m-auto">
+                    <label for="productName">Product Name</label>
+                    <input type="text" id="productName" class="form-control " oninput="validationProdName()" required>
+                    <p class="d-none text-danger mb-0">* Allowed : word of 3 to 6 characters starts with capital character</p>
+    
+                    <label for="productPrice">Product Price ( $ )</label>
+                    <input type="text" id="productPrice" class="form-control" oninput="valaidationProdPrice()" required>
+                    <p class="d-none text-danger mb-0">* Allowed : 100 - 1000</p>
+    
+    
+                    <label for="productCategory">Product Category</label>
+                    <input type="text" id="productCategory" class="form-control" oninput="valaidationProdCategory()" required>
+                    <p class="d-none text-danger mb-0">* Allowed : Mobile or Tv or Device </p>
+    
+    
+                    <label for="productDesc">Product Description</label>
+                    <textarea name="" id="productDesc" cols="30" rows="5" class="form-control" oninput="valaidationProdDesc()" required></textarea>
+                    <p class="d-none text-danger mb-0">* Allowed : 0-500 characters</p>
+    
+
+                    <button class="btn btn-success my-2 bg" onclick="addProduct()" id="add-button">Add Product</button>
+                    <button class="btn btn-success my-2 bg" onclick="clearForm()">Reset</button>
+                </div>
+            </div>
+
+            
+    
+            <div class="row m-auto">
+                <div class="col-md-10 m-auto">
+                    <div class="">
+                        <input type="text" class="form-control" placeholder="Search by name" id="searchArea" oninput="searchProduct(this.value)">
+                    </div>
+                    <div>
+                        <table class="table text-center text-white">
+    
+                            <head>
+                                <th>Index</th>
+                                <th>Product Name</th>
+                                <th>Product Price</th>
+                                <th>Product Category</th>
+                                <th>Product Discription</th>
+                                <th>Update</th>
+                                <th>Delete</th>
+                            </head>
+                            <tbody id="tableBody">
+            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </section>
+    
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="Java/main.js"></script>
+
+</body>
+
+</html>
