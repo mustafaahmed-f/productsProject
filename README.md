@@ -8,4 +8,4 @@ Each input has its validations . These validations appears under each field as a
 After pressing ' add product button ' , your product is added to the table at the bottom of the page . 
 Products are also stored in the local storage .
 for each product , two buttons are created ( delete and update buttons ) .
-Update button is used to update info of the product and re-add it again to the table . 
+Update button is used to update info of the product and re-add it again to the table . .
